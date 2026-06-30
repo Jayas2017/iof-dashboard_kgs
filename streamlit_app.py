@@ -41,7 +41,7 @@ import os
 
 st.set_page_config(page_title="IoF Fish Positioning Dashboard", layout="wide")
 
-PASSWORD = "Pass@123"
+PASSWORD = os.environ.get("DASHBOARD_PASSWORD", "Pass@123")
 
 if 'authenticated' not in st.session_state:
     st.session_state['authenticated'] = False

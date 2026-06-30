@@ -1,0 +1,5 @@
+
+.env
+*_pre_neon.py
+__pycache__/
+*.pyc
